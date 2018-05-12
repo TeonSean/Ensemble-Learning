@@ -31,8 +31,7 @@ with open('validation.csv', 'r') as f:
 tfidf = transformer.fit_transform(vectorizer.fit_transform(reviews))
 word = vectorizer.get_feature_names()
 
-def train_review_score(id, re):
-    assert(re == reviews[id])
+def train_review_score(id):
     ls = tfidf.getrow(id).toarray()[0]
     re = {}
     for idx, val in enumerate(ls):
@@ -40,8 +39,7 @@ def train_review_score(id, re):
             re[idx] = val
     return re
 
-def validation_review_score(id, re):
-    assert(re == reviews[id + nr_train])
+def validation_review_score(id):
     ls = tfidf.getrow(id + nr_train).toarray()[0]
     re = {}
     for idx, val in enumerate(ls):
@@ -49,3 +47,14 @@ def validation_review_score(id, re):
             re[idx] = val
     return re
 
+def train_data():
+    scores = []
+    for i in range(nr_train):
+        scores.append(train_review_score(i))
+    return labels, scores
+
+def validation_data():
+    scores = []
+    for i in range(nr_val):
+        scores.append(validation_review_score(i))
+    return mock_labels, scores
