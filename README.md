@@ -1,2 +1,5 @@
 # Ensemble-Learning
-Homework
+## Dependencies
+* python2.7
+* scipy
+* sklearn
