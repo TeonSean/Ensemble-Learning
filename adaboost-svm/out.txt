@@ -1,0 +1,88 @@
+generating tf-idf scores...
+done
+iteration 0
+training svm classifier...
+[LibSVM]..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 2313
+C = 1384.658606
+obj = 1714690.082040, rho = -5.239054
+nSV = 10156, nBSV = 10154
+...
+Warning: using -h 0 may be faster
+...
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 6909
+C = 191.511986
+obj = 616090.702219, rho = 0.168468
+nSV = 17398, nBSV = 17396
+...
+Warning: using -h 0 may be faster
+..
+Warning: using -h 0 may be faster
+*
+optimization finished, #iter = 5897
+C = 124.994159
+obj = 260635.380733, rho = 1.076827
+nSV = 16512, nBSV = 16512
+Total nSV = 27694
+done
+validating...
+done
+error is 0.210716230937
+updating sample weights...
+done
+iteration 1
+training svm classifier...
+[LibSVM]*
+optimization finished, #iter = 0
+C = 29576159.154719
+obj = 3984102.239572, rho = -2.731999
+nSV = 10576, nBSV = 4023
+*
+optimization finished, #iter = 0
+C = 3581795.093864
+obj = 353441.360475, rho = -1.118063
+nSV = 16822, nBSV = 16820
+*
+optimization finished, #iter = 0
+C = 11565431.234477
+obj = 4303747.626143, rho = 0.339183
+nSV = 16355, nBSV = 16353
+Total nSV = 23017
+done
+validating...
+done
+error is 0.447498056154
+updating sample weights...
+done
+iteration 2
+training svm classifier...
+[LibSVM]*
+optimization finished, #iter = 0
+C = -80405101.070887
+obj = 22319355.979938, rho = 6.195178
+nSV = 10707, nBSV = 10707
+*
+optimization finished, #iter = 0
+C = 17130984.158390
+obj = 6948204.798104, rho = -2.239761
+nSV = 16828, nBSV = 15557
+*
+optimization finished, #iter = 0
+C = 6119948.409213
+obj = 1037766.179987, rho = -0.239438
+nSV = 16292, nBSV = 16290
+Total nSV = 23262
+done
+validating...
+done
+error is 0.559793439778
+predicting with classifier 0...
+done
+predicting with classifier 1...
+done
+merging...
+done

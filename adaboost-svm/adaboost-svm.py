@@ -8,8 +8,7 @@ def learn(id, iteration):
     weights = []
     for i in range(iteration):
         print('iteration ' + str(i))
-        clf = train(sample_weight)
-        matches = validate(clf)
+        clf, matches = train(sample_weight)
         early_term, clf_weight, sample_weight = iterate(matches, sample_weight)
         if early_term:
             break
@@ -25,9 +24,11 @@ def reuse(id):
 
 def classify(id, clfs, weights):
     prediction = []
-    for clf in clfs:
+    for idx, clf in enumerate(clfs):
+        print('predicting with classifier ' + str(idx) + '...')
         prediction.append(predict(clf))
-    merge(id + classifier_name, prediction, weights)
+        print('done')
+    merge(id, prediction, weights)
 
 
 test_id = 'test'
