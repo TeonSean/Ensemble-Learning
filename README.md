@@ -13,4 +13,6 @@ The four python files have similar content, and thus similar usage.
 Method `learn()`, `reuse()` and `classify()` are provided. Call `learn()` to train new models or reuse() to
 load existing trained models, and use the return values of these two methods as parameters to call 
 `classify()` to generate result file.   
-Generated model files are in directory `model`, while generated result files are in directory `result`.
+Generated model files are in directory `model`, while generated result files are in directory `result`.  
+The trained model of bagging-dtree is too large to be included in the submit file,
+so you'll have to train this model manully. The three other models are included.
