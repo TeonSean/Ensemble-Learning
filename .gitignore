@@ -59,6 +59,8 @@ db.sqlite3
 *.o
 *.so.2
 .idea/
+model/
+result/
 
 # Flask stuff:
 instance/
